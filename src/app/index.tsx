@@ -1,7 +1,7 @@
 function App() {
   return (
-    <div>
-      <h1>Spotify</h1>
+    <div className="h-screen grid place-content-center bg-spotify">
+      <h1 className="text-4xl font-bold text-black">Spotify</h1>
     </div>
   );
 }
