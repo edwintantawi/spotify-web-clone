@@ -7,7 +7,7 @@ module.exports = {
         sans: ['Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
-        spotify: '#1DB954',
+        primary: '#1DB954',
         black: '#191414',
       },
     },
