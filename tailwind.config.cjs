@@ -8,7 +8,10 @@ module.exports = {
       },
       colors: {
         primary: '#1DB954',
-        black: '#191414',
+        black: {
+          default: '#000000',
+          base: '#121212',
+        },
       },
     },
   },
