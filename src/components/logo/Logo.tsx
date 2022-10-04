@@ -1,12 +1,13 @@
+import { HTMLAttributes } from 'react';
+
 import { twc } from '~/utilities/twc';
 
-interface LogoProps {
-  className?: string;
+interface LogoProps extends HTMLAttributes<HTMLOrSVGElement> {
   invert?: boolean;
 }
 
 function Logo(props: LogoProps) {
-  const { className, invert = false } = props;
+  const { className, invert = false, ...restProps } = props;
 
   const defaultStyles = 'w-11 aspect-square fill-primary';
   const styles = twc(defaultStyles, { 'fill-white': invert }, className);
@@ -17,6 +18,7 @@ function Logo(props: LogoProps) {
       viewBox="0 0 226.73334 226.73334"
       version="1.1"
       className={styles}
+      {...restProps}
     >
       <g transform="matrix(1.3333333,0,0,-1.3333333,0,226.73333)">
         <g transform="scale(0.1)">
