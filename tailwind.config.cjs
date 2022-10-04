@@ -12,6 +12,9 @@ module.exports = {
           default: '#000000',
           base: '#121212',
         },
+        gray: {
+          base: '#b3b3b3',
+        },
       },
     },
   },
