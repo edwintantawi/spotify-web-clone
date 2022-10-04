@@ -7,7 +7,7 @@ interface TopBarLayoutProps {
 function TopBarLayout(props: TopBarLayoutProps) {
   const { children } = props;
 
-  return <div className="col-span-2 h-12 rounded-lg bg-black-base">{children}</div>;
+  return <div className="col-span-2 h-12 rounded-lg bg-black-default">{children}</div>;
 }
 
 export { TopBarLayout };
