@@ -7,8 +7,15 @@ module.exports = {
         sans: ['Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
-        spotify: '#1DB954',
-        black: '#191414',
+        primary: '#1DB954',
+        secondary: '#242424',
+        black: {
+          default: '#000000',
+          base: '#121212',
+        },
+        gray: {
+          base: '#b3b3b3',
+        },
       },
     },
   },
