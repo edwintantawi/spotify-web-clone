@@ -15,17 +15,37 @@ export default {
       },
       control: 'boolean',
     },
+    variant: {
+      defaultValue: 'icon',
+      table: {
+        defaultValue: { summary: 'icon' },
+      },
+    },
   },
 } as ComponentMeta<ButtonType>;
 
 const Template: ComponentStory<ButtonType> = (args) => <Logo {...args}>Button</Logo>;
 
-export const Default = Template.bind({});
-Default.args = {
+export const IconLogo = Template.bind({});
+IconLogo.args = {
   invert: false,
+  variant: 'icon',
 };
 
-export const Invert = Template.bind({});
-Invert.args = {
+export const IconLogoInvert = Template.bind({});
+IconLogoInvert.args = {
   invert: true,
+  variant: 'icon',
+};
+
+export const TextLogo = Template.bind({});
+TextLogo.args = {
+  invert: false,
+  variant: 'text',
+};
+
+export const TextLogoInvert = Template.bind({});
+TextLogoInvert.args = {
+  invert: true,
+  variant: 'text',
 };
